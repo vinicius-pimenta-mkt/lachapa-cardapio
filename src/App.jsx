@@ -123,7 +123,7 @@ function App() {
         <div className="max-w-6xl mx-auto px-4 py-4">
           <div className="flex items-center justify-between">
             <div className="flex items-center gap-4">
-              <img src={logoImg} alt="La Chapa" className="h-19 w-19 object-contain" />
+              <img src={logoImg} alt="La Chapa" className="h-20 w-20 object-contain" />
               <div>
                 <h1 className="text-3xl font-bold">LA CHAPA</h1>
                 <p className="text-sm text-white/90 -mt-1">Hamburgueria Artesanal</p>
