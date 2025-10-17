@@ -9,7 +9,7 @@ import { ProductDialog } from './components/ProductDialog.jsx';
 import './App.css';
 
 // Número do WhatsApp do restaurante (formato: 5527999999999)
-const WHATSAPP_NUMBER = '5527999999999'; // Altere para o número real do restaurante
+const WHATSAPP_NUMBER = '5528992546359'; // Altere para o número real do restaurante
 
 function App() {
   const [cart, setCart] = useState([]);
