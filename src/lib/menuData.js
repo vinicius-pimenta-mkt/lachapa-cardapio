@@ -26,7 +26,7 @@ export const products = [
     description: 'Pão brioche, hambúrguer de Costela 130g, presunto, queijo cheddar, bacon crocante, molho barbecue e salada.',
     price: 24.00,
     category: 'burgers-artesanais',
-    image: '/src/assets/images/burger-artesanal.png'
+    image: '/images/burger-artesanal.png'
   },
   {
     id: 'la-file-bovino',
@@ -34,7 +34,7 @@ export const products = [
     description: 'Pão brioche, 130g de filé Bovino, presunto, mussarela, molho especial e salada.',
     price: 25.00,
     category: 'burgers-artesanais',
-    image: '/src/assets/images/burger-artesanal.png'
+    image: '/images/burger-artesanal.png'
   },
   {
     id: 'la-alcatra',
@@ -42,7 +42,7 @@ export const products = [
     description: 'Pão brioche, hambúrguer de Alcatra 130g, presunto, mussarela, bacon crocante, molho barbecue e salada.',
     price: 25.00,
     category: 'burgers-artesanais',
-    image: '/src/assets/images/burger-artesanal.png'
+    image: '/images/burger-artesanal.png'
   },
   {
     id: 'la-cupim',
@@ -50,7 +50,7 @@ export const products = [
     description: 'Pão brioche, hambúrguer de Cupim 130g, presunto, mussarela, bacon crocante, molho barbecue e salada.',
     price: 27.00,
     category: 'burgers-artesanais',
-    image: '/src/assets/images/burger-artesanal.png'
+    image: '/images/burger-artesanal.png'
   },
   {
     id: 'la-picanha',
@@ -58,7 +58,7 @@ export const products = [
     description: 'Pão brioche, hambúrguer de Picanha 130g, presunto, mussarela, bacon crocante, molho barbecue e salada.',
     price: 30.00,
     category: 'burgers-artesanais',
-    image: '/src/assets/images/burger-artesanal.png'
+    image: '/images/burger-artesanal.png'
   },
   {
     id: 'la-costela-duplo',
@@ -66,7 +66,7 @@ export const products = [
     description: 'Pão brioche, 2x hambúrguer de Costela 130g, 2x queijo cheddar, molho barbecue e salada.',
     price: 34.00,
     category: 'burgers-artesanais',
-    image: '/src/assets/images/burger-artesanal.png'
+    image: '/images/burger-artesanal.png'
   },
   {
     id: 'la-alcatra-duplo',
@@ -74,7 +74,7 @@ export const products = [
     description: 'Pão brioche, 2x hambúrguer de Alcatra 130g, presunto, mussarela, bacon crocante, molho barbecue e salada.',
     price: 35.00,
     category: 'burgers-artesanais',
-    image: '/src/assets/images/burger-artesanal.png'
+    image: '/images/burger-artesanal.png'
   },
   {
     id: 'la-picanha-duplo',
@@ -82,7 +82,7 @@ export const products = [
     description: 'Pão brioche, 2x hambúrguer de Picanha 130g, presunto, mussarela, bacon crocante, molho barbecue e salada.',
     price: 40.00,
     category: 'burgers-artesanais',
-    image: '/src/assets/images/burger-artesanal.png'
+    image: '/images/burger-artesanal.png'
   },
   {
     id: 'bauru',
@@ -90,7 +90,7 @@ export const products = [
     description: 'Pão brioche, hambúrguer, ovo, queijo mussarela, presunto, alface e tomate, molho da casa.',
     price: 15.00,
     category: 'tradicionais',
-    image: '/src/assets/images/burger-tradicional.png'
+    image: '/images/burger-tradicional.png'
   },
   {
     id: 'americano',
@@ -98,7 +98,7 @@ export const products = [
     description: 'Pão brioche, hambúrguer, catupiry, ovo, queijo mussarela, presunto, alface tomate, molho da casa.',
     price: 16.00,
     category: 'tradicionais',
-    image: '/src/assets/images/burger-tradicional.png'
+    image: '/images/burger-tradicional.png'
   },
   {
     id: 'x-burguer',
@@ -106,7 +106,7 @@ export const products = [
     description: 'Pão brioche, hambúrguer, queijo mussarela, presunto, alface, tomate, molho da casa.',
     price: 14.00,
     category: 'tradicionais',
-    image: '/src/assets/images/burger-tradicional.png'
+    image: '/images/burger-tradicional.png'
   },
   {
     id: 'x-burguer-duplo',
@@ -114,7 +114,7 @@ export const products = [
     description: 'Pão brioche, 2 hambúrguer, queijo mussarela, presunto, alface e tomate, molho da casa.',
     price: 20.00,
     category: 'tradicionais',
-    image: '/src/assets/images/burger-tradicional.png'
+    image: '/images/burger-tradicional.png'
   },
   {
     id: 'x-bacon',
@@ -122,7 +122,7 @@ export const products = [
     description: 'Pão brioche, hambúrguer, bacon crocante, queijo mussarela, presunto, alface e tomate, molho da casa.',
     price: 20.00,
     category: 'tradicionais',
-    image: '/src/assets/images/burger-tradicional.png'
+    image: '/images/burger-tradicional.png'
   },
   {
     id: 'x-calabacon',
@@ -130,7 +130,7 @@ export const products = [
     description: 'Pão brioche, hambúrguer, calabresa, bacon, queijo mussarela, presunto, alface, tomate, molho da casa.',
     price: 22.00,
     category: 'tradicionais',
-    image: '/src/assets/images/burger-tradicional.png'
+    image: '/images/burger-tradicional.png'
   },
   {
     id: 'x-calabresa-egg',
@@ -138,7 +138,7 @@ export const products = [
     description: 'Pão brioche, hambúrguer, calabresa, ovo, queijo mussarela, presunto, alface, tomate, molho da casa.',
     price: 23.00,
     category: 'tradicionais',
-    image: '/src/assets/images/burger-tradicional.png'
+    image: '/images/burger-tradicional.png'
   },
   {
     id: 'la-calabresa',
@@ -146,7 +146,7 @@ export const products = [
     description: 'Pão brioche, 130g de Calabresa defumada, mussarela, presunto, alface, tomate, molho da casa.',
     price: 20.00,
     category: 'tradicionais',
-    image: '/src/assets/images/burger-tradicional.png'
+    image: '/images/burger-tradicional.png'
   },
   {
     id: 'la-frango-desfiado',
@@ -154,7 +154,7 @@ export const products = [
     description: 'Pão brioche, 130g de Frango Desfiado, catupiry, presunto, mussarela, batata palha, molho da casa e salada.',
     price: 23.00,
     category: 'tradicionais',
-    image: '/src/assets/images/burger-tradicional.png'
+    image: '/images/burger-tradicional.png'
   },
   {
     id: 'la-toscana',
@@ -162,7 +162,7 @@ export const products = [
     description: 'Pão brioche, hambúrguer de toscana 130g, presunto, mussarela, molho da casa e salada.',
     price: 22.00,
     category: 'tradicionais',
-    image: '/src/assets/images/burger-tradicional.png'
+    image: '/images/burger-tradicional.png'
   },
   {
     id: 'x-tudo',
@@ -170,7 +170,7 @@ export const products = [
     description: 'Pão brioche, hambúrguer, ovo, calabresa bacon, queijo mussarela presunto, cheddar, frango desfiado batata palha, catupiry, molho da casa.',
     price: 28.00,
     category: 'tradicionais',
-    image: '/src/assets/images/burger-tradicional.png'
+    image: '/images/burger-tradicional.png'
   },
   {
     id: 'passaporte-frango',
@@ -178,7 +178,7 @@ export const products = [
     description: 'Pão seda, 2 salsichas, frango desfiado, milho, ervilha, tomate, batata palha, queijo ralado e molho especial.',
     price: 16.00,
     category: 'passaportes',
-    image: '/src/assets/images/passaporte.png'
+    image: '/images/passaporte.png'
   },
   {
     id: 'passaporte-frango-catupiry',
@@ -186,7 +186,7 @@ export const products = [
     description: 'Pão seda, 2 salsichas, frango desfiado, Catupiry, milho, ervilha, tomate, batata palha, queijo ralado e molho especial.',
     price: 19.00,
     category: 'passaportes',
-    image: '/src/assets/images/passaporte.png'
+    image: '/images/passaporte.png'
   },
   {
     id: 'passaporte-frango-cheddar',
@@ -194,7 +194,7 @@ export const products = [
     description: 'Pão seda, 2 salsichas, frango desfiado, Cheddar, milho, ervilha, tomate, batata palha, queijo ralado e molho especial.',
     price: 19.00,
     category: 'passaportes',
-    image: '/src/assets/images/passaporte.png'
+    image: '/images/passaporte.png'
   },
   {
     id: 'passaporte-frango-calabresa',
@@ -202,7 +202,7 @@ export const products = [
     description: 'Pão seda, 2 salsichas, frango desfiado, Calabresa, milho, ervilha, tomate, batata palha, queijo ralado e molho especial.',
     price: 19.00,
     category: 'passaportes',
-    image: '/src/assets/images/passaporte.png'
+    image: '/images/passaporte.png'
   },
   {
     id: 'passaporte-frango-bacon',
@@ -210,7 +210,7 @@ export const products = [
     description: 'Pão seda, 2 salsichas, frango desfiado, Bacon, milho, ervilha, tomate, batata palha, queijo ralado e molho especial.',
     price: 20.00,
     category: 'passaportes',
-    image: '/src/assets/images/passaporte.png'
+    image: '/images/passaporte.png'
   },
   {
     id: 'passaporte-toscana',
@@ -218,7 +218,7 @@ export const products = [
     description: 'Pão seda, 2 salsichas, linguiça toscana, milho, ervilha, tomate, batata palha, queijo ralado e molho especial.',
     price: 21.00,
     category: 'passaportes',
-    image: '/src/assets/images/passaporte.png'
+    image: '/images/passaporte.png'
   },
   {
     id: 'passaporte-carne',
@@ -226,7 +226,7 @@ export const products = [
     description: 'Pão seda, 2 salsichas, carne moída, milho, ervilha, tomate, batata palha, queijo ralado e molho especial.',
     price: 20.00,
     category: 'passaportes',
-    image: '/src/assets/images/passaporte.png'
+    image: '/images/passaporte.png'
   },
   {
     id: 'passaporte-carne-catupiry',
@@ -234,7 +234,7 @@ export const products = [
     description: 'Pão seda, 2 salsichas, carne moída, catupiry, milho, ervilha, tomate, batata palha, queijo ralado e molho especial.',
     price: 22.00,
     category: 'passaportes',
-    image: '/src/assets/images/passaporte.png'
+    image: '/images/passaporte.png'
   },
   {
     id: 'passaporte-carne-cheddar',
@@ -242,7 +242,7 @@ export const products = [
     description: 'Pão seda, 2 salsichas, carne moída, Cheddar, milho, ervilha, tomate, batata palha, queijo ralado e molho especial.',
     price: 22.00,
     category: 'passaportes',
-    image: '/src/assets/images/passaporte.png'
+    image: '/images/passaporte.png'
   },
   {
     id: 'passaporte-carne-sol',
@@ -250,7 +250,7 @@ export const products = [
     description: 'Pão seda, 2 salsichas, carne de sol desfiada, milho, ervilha, tomate, batata palha, queijo ralado e molho especial.',
     price: 28.00,
     category: 'passaportes',
-    image: '/src/assets/images/passaporte.png'
+    image: '/images/passaporte.png'
   },
   {
     id: 'passaporte-file-bovino',
@@ -258,7 +258,7 @@ export const products = [
     description: 'Pão seda, 2 salsichas, filé bovino, milho, ervilha, tomate, batata palha, queijo ralado e molho especial.',
     price: 23.00,
     category: 'passaportes',
-    image: '/src/assets/images/passaporte.png'
+    image: '/images/passaporte.png'
   },
   {
     id: 'coca-cola-lata',
@@ -266,7 +266,7 @@ export const products = [
     description: 'Refrigerante Coca-cola lata 350ml',
     price: 5.50,
     category: 'bebidas',
-    image: '/src/assets/images/coca-cola-lata.png'
+    image: '/images/coca-cola-lata.png'
   },
   {
     id: 'coca-cola-zero-lata',
@@ -274,7 +274,7 @@ export const products = [
     description: 'Refrigerante Coca-cola Zero lata 350ml',
     price: 5.50,
     category: 'bebidas',
-    image: '/src/assets/images/Coca-cola-lata-zero.png'
+    image: '/images/Coca-cola-lata-zero.png'
   },
   {
     id: 'guarana-lata',
@@ -282,7 +282,7 @@ export const products = [
     description: 'Refrigerante Guaraná lata 350ml',
     price: 5.00,
     category: 'bebidas',
-    image: '/src/assets/images/Guarana-Antarctica-lata.png'
+    image: '/images/Guarana-Antarctica-lata.png'
   },
   {
     id: 'guarana-zero-lata',
@@ -290,7 +290,7 @@ export const products = [
     description: 'Refrigerante Guarana Zero lata 350ml',
     price: 5.50,
     category: 'bebidas',
-    image: '/src/assets/images/Guarana-Antarctica-latazero.png'
+    image: '/images/Guarana-Antarctica-latazero.png'
   },
   {
     id: 'fanta-lata',
@@ -298,7 +298,7 @@ export const products = [
     description: 'Insira o sabor no campo Observações - Refrigerante Fanta lata 350ml',
     price: 5.00,
     category: 'bebidas',
-    image: '/src/assets/images/fanta-lata.png'
+    image: '/images/fanta-lata.png'
   },
   {
     id: 'agua-mineral',
@@ -306,7 +306,7 @@ export const products = [
     description: 'Água mineral sem gás 500ml',
     price: 3.00,
     category: 'bebidas',
-    image: '/src/assets/images/agua-sem-gas.png'
+    image: '/images/agua-sem-gas.png'
   },
   {
     id: 'agua-mineral-com-gas',
@@ -314,7 +314,7 @@ export const products = [
     description: 'Água mineral com gás 500ml',
     price: 3.00,
     category: 'bebidas',
-    image: '/src/assets/images/agua-com-gas.png'
+    image: '/images/agua-com-gas.png'
   },
   {
     id: 'guarana-1-litro',
@@ -322,7 +322,7 @@ export const products = [
     description: 'Refrigerante Guaraná 1 litro',
     price: 8.00,
     category: 'bebidas',
-    image: '/src/assets/images/Guarana-Antarctica-1l.png'
+    image: '/images/Guarana-Antarctica-1l.png'
   },
   {
     id: 'guarana-2-litros',
@@ -330,7 +330,7 @@ export const products = [
     description: 'Refrigerante Guaraná 2 litros',
     price: 12.00,
     category: 'bebidas',
-    image: '/src/assets/images/Guarana-Antarctica-2l.png'
+    image: '/images/Guarana-Antarctica-2l.png'
   },
   {
     id: 'coca-cola-1-litro',
@@ -338,7 +338,7 @@ export const products = [
     description: 'Refrigerante Coca-cola 1 litro',
     price: 10.00,
     category: 'bebidas',
-    image: '/src/assets/images/coca-cola-15l.png'
+    image: '/images/coca-cola-15l.png'
   },
   {
     id: 'coca-cola-2-litros',
@@ -346,7 +346,7 @@ export const products = [
     description: 'Refrigerante Coca-cola 2 litros',
     price: 14.00,
     category: 'bebidas',
-    image: '/src/assets/images/coca-cola-2l.png'
+    image: '/images/coca-cola-2l.png'
   },
   {
     id: 'fanta-1-litro',
@@ -354,7 +354,7 @@ export const products = [
     description: 'Insira o sabor no campo Observações - Refrigerante Fanta 1 litro',
     price: 8.00,
     category: 'bebidas',
-    image: '/src/assets/images/fanta-1l.png'
+    image: '/images/fanta-1l.png'
   }
 ];
 
