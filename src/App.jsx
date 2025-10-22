@@ -159,9 +159,9 @@ function App() {
         <div className="max-w-6xl mx-auto px-4 py-4">
           <div className="flex items-center justify-between">
             <div className="flex items-center gap-4">
-              <img src="/images/logo.png" alt="La Chapa" className="h-12 w-12 object-contain" />
+              <img src="/images/logo.png" alt="La Chapa" className="h-20 w-20 object-contain" />
               <div>
-                <h1 className="text-2xl font-bold">LA CHAPA</h1>
+                <h1 className="text-3xl font-bold">LA CHAPA</h1>
                 <p className="text-sm text-white/90">Hamburgueria Artesanal</p>
               </div>
             </div>
