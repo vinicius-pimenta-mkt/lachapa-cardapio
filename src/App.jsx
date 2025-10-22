@@ -161,8 +161,8 @@ function App() {
             <div className="flex items-center gap-4">
               <img src="/images/logo.png" alt="La Chapa" className="h-20 w-20 object-contain" />
               <div>
-                <h1 className="text-3xl font-bold">LA CHAPA</h1>
-                <p className="text-sm text-white/90">Hamburgueria Artesanal</p>
+                <h1 className="text-3xl font-bold mt-0 mb-0">LA CHAPA</h1>
+                <p className="text-sm text-white/90 -mt-1">Hamburgueria Artesanal</p>
               </div>
             </div>
             <button
