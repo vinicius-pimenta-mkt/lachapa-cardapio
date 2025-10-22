@@ -3,9 +3,9 @@ import { ShoppingCart, Search, X, Plus, Minus } from 'lucide-react';
 import { Button } from '@/components/ui/button.jsx';
 import { Input } from '@/components/ui/input.jsx';
 import { Badge } from '@/components/ui/badge.jsx';
-import logoImg from './assets/images/logo.png';
 import { categories, products } from './lib/menuData.js';
 import { ProductDialog } from './components/ProductDialog.jsx';
+import { CheckoutDialog } from './components/CheckoutDialog.jsx';
 import './App.css';
 
 // Número do WhatsApp do restaurante (formato: 5527999999999)
@@ -16,6 +16,7 @@ function App() {
   const [searchTerm, setSearchTerm] = useState('');
   const [isCartOpen, setIsCartOpen] = useState(false);
   const [selectedProduct, setSelectedProduct] = useState(null);
+  const [isCheckoutOpen, setIsCheckoutOpen] = useState(false);
 
   const addToCart = (productData) => {
     setCart(prevCart => {
@@ -67,14 +68,28 @@ function App() {
     return cart.reduce((total, item) => total + item.quantity, 0);
   };
 
-  const handleFinishOrder = () => {
+  const handleFinishOrder = (checkoutData) => {
     if (cart.length === 0) return;
+
+    const { address, paymentMethod, changeAmount } = checkoutData;
 
     // Montar mensagem do pedido
     let message = '*🍔 PEDIDO - LA CHAPA HAMBURGUERIA*\n\n';
     
+    // Dados do cliente
+    message += '*📋 DADOS DO CLIENTE*\n';
+    message += `Nome: ${address.clientName}\n`;
+    message += `Rua: ${address.street}, ${address.number}\n`;
+    message += `Bairro: ${address.neighborhood}\n`;
+    if (address.reference) {
+      message += `Referência: ${address.reference}\n`;
+    }
+    message += '\n';
+
+    // Itens do pedido
+    message += '*🛒 ITENS DO PEDIDO*\n';
     cart.forEach((item, index) => {
-      message += `*${index + 1}. ${item.name}* (${item.quantity}x)\n`;
+      message += `${index + 1}. ${item.name} (${item.quantity}x)\n`;
       message += `   💰 R$ ${(item.totalPrice || (item.price * item.quantity)).toFixed(2)}\n`;
       
       if (item.selectedAdditionals && item.selectedAdditionals.length > 0) {
@@ -90,7 +105,23 @@ function App() {
       
       message += '\n';
     });
+
+    // Forma de pagamento
+    message += '*💳 FORMA DE PAGAMENTO*\n';
+    const paymentNames = {
+      pix: 'Pix',
+      dinheiro: 'Dinheiro',
+      debito: 'Débito',
+      credito: 'Crédito'
+    };
+    message += `Método: ${paymentNames[paymentMethod]}\n`;
     
+    if (paymentMethod === 'dinheiro' && changeAmount) {
+      message += `Valor do Troco: R$ ${parseFloat(changeAmount).toFixed(2)}\n`;
+    }
+    message += '\n';
+
+    // Total
     message += `*TOTAL: R$ ${getCartTotal().toFixed(2)}*\n\n`;
     message += '_Aguardando confirmação do pedido!_';
 
@@ -100,6 +131,11 @@ function App() {
     // Abrir WhatsApp
     const whatsappUrl = `https://wa.me/${WHATSAPP_NUMBER}?text=${encodedMessage}`;
     window.open(whatsappUrl, '_blank');
+
+    // Limpar carrinho e fechar diálogos
+    setCart([]);
+    setIsCheckoutOpen(false);
+    setIsCartOpen(false);
   };
 
   const filteredProducts = products.filter(product =>
@@ -123,7 +159,7 @@ function App() {
         <div className="max-w-6xl mx-auto px-4 py-4">
           <div className="flex items-center justify-between">
             <div className="flex items-center gap-4">
-              <img src={logoImg} alt="La Chapa" className="h-12 w-12 object-contain" />
+              <img src="/images/logo.png" alt="La Chapa" className="h-12 w-12 object-contain" />
               <div>
                 <h1 className="text-2xl font-bold">LA CHAPA</h1>
                 <p className="text-sm text-white/90">Hamburgueria Artesanal</p>
@@ -218,7 +254,7 @@ function App() {
       )}
 
       {/* Cart Sidebar */}
-      {isCartOpen && (
+      {isCartOpen && !isCheckoutOpen && (
         <div className="fixed inset-0 z-50 bg-black/50" onClick={() => setIsCartOpen(false)}>
           <div
             className="absolute right-0 top-0 h-full w-full max-w-md bg-white shadow-xl"
@@ -294,16 +330,26 @@ function App() {
                     <span className="text-[#22c55e]">R$ {getCartTotal().toFixed(2)}</span>
                   </div>
                   <Button 
-                    onClick={handleFinishOrder}
+                    onClick={() => setIsCheckoutOpen(true)}
                     className="w-full bg-[#C41E3A] hover:bg-[#A01828] text-white py-6 text-lg"
                   >
-                    Finalizar Pedido
+                    Continuar com o Pedido
                   </Button>
                 </div>
               )}
             </div>
           </div>
         </div>
+      )}
+
+      {/* Checkout Dialog */}
+      {isCheckoutOpen && (
+        <CheckoutDialog
+          cart={cart}
+          totalPrice={getCartTotal()}
+          onClose={() => setIsCheckoutOpen(false)}
+          onFinishOrder={handleFinishOrder}
+        />
       )}
     </div>
   );
